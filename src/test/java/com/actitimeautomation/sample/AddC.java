@@ -28,7 +28,7 @@ public class AddC {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
 
-        // 🔐 Login
+        
         WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("mat-input-0")));
         emailField.sendKeys("7066310138");
 
@@ -38,24 +38,23 @@ public class AddC {
         WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Sign In')]")));
         loginButton.click();
 
-        // ✅ Wait for Dashboard to load
+     
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Dashboard')]")));
 
-        // ➕ Navigate to My Customers
+  
         WebElement myCustomersBtn = wait.until(ExpectedConditions.elementToBeClickable(
                 By.xpath("//*[contains(text(),'My Customers')]")));
         myCustomersBtn.click();
 
 
-        // ➕ Click on New Customer
+
         WebElement newCustomerBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),' New Customer ')]")));
         newCustomerBtn.click();
 
-        // 🧾 Fill Customer Form - Avoiding dynamic mat-input ID
 
-        // Wait for the input field to be visible
 
-// Set the value using JavaScriptExecutor
+       
+
 
         WebElement inputField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("mat-input-27")));
         inputField.sendKeys("Patu Narkhede");
@@ -65,7 +64,6 @@ public class AddC {
         WebElement saveBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),' Save ')]")));
         saveBtn.click();
 
-        // ✅ Verify Toast Message
         WebElement toast = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//simple-snack-bar")));
         System.out.println("Toast message: " + toast.getText());
     }
