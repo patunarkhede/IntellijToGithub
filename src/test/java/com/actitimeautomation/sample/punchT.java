@@ -43,7 +43,7 @@ public class punchT {
                 By.xpath("//button[contains(text(),'Sign In')]")));
         signInButton.click();
 
-        // Wait for dashboard to appear or URL change
+  
         wait.until(ExpectedConditions.or(
                 ExpectedConditions.urlContains("dashboard"),
                 ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(text(),'Punch In')]"))
