@@ -38,7 +38,7 @@ public class LoginT {
                 By.xpath("//button[contains(text(),'Sign In')]")));
         signInButton.click();
 
-        // Wait until dashboard is loaded or URL changes
+     
         wait.until(ExpectedConditions.urlContains("dashboard"));
     }
 
