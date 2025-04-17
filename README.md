@@ -19,10 +19,8 @@ If the Candidate knows Cucumber/TestNG Frameworks, then implement the above proc
 
 
 
-This task present in manual testing folder
+This below task present in folder called " Manual-Testing-Task "
 Manual tester-
-
-
 
 Manual Tester - Machine Test
 
